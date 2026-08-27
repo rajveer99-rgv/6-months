@@ -31,6 +31,22 @@ footer{text-align:center;padding:100px 20px 55px;color:#796671;font-size:11px;le
 .favorites{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.fav{padding:28px 18px;border:1px solid var(--line);border-radius:25px;background:var(--card);text-align:center}.fav .icon{font-size:32px;margin-bottom:12px}.fav b{display:block;font-family:'Cormorant Garamond';font-size:25px;font-weight:500}.fav span{display:block;color:var(--muted);font-size:11px;margin-top:5px}@media(max-width:720px){.favorites{grid-template-columns:1fr 1fr}}
 </style>
 </head>
+    <!-- BACKGROUND MUSIC -->
+<audio id="audio" loop>
+    <source src="music/song1.ogg" type="audio/ogg">
+</audio>
+
+<script>
+    const audio = document.getElementById("audio");
+
+    audio.volume = 0.5;
+
+    // Start music after the user's first interaction
+    document.addEventListener("click", function startMusic() {
+        audio.play().catch(() => {});
+        document.removeEventListener("click", startMusic);
+    }, { once: true });
+</script>
 <body>
 <div id="loader"><div class="loader-inner"><div class="loader-heart">♡</div><p>Loading your little universe…</p></div></div>
 <div class="grain"></div><div id="hearts"></div>
