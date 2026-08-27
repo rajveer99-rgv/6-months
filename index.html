@@ -151,18 +151,5 @@ function openSecret(){const box=document.querySelector('#secret');box.classList.
 function burst(){const b=document.createElement('i');b.className='firework';b.style.left=(45+Math.random()*10)+'%';b.style.top=(42+Math.random()*10)+'%';b.style.setProperty('--x',(Math.random()*300-150)+'px');b.style.setProperty('--y',(Math.random()*260-130)+'px');document.querySelector('.surprise').appendChild(b);setTimeout(()=>b.remove(),1100)}
 const input=document.querySelector('#photoInput');input.addEventListener('change',e=>{const files=[...e.target.files].slice(0,12);if(!files.length)return;const grid=document.querySelector('#memoryGrid');grid.innerHTML='';files.forEach((file,i)=>{const card=document.createElement('div');card.className='memory'+(i===0?' big':'');const img=document.createElement('img');img.src=URL.createObjectURL(file);card.appendChild(img);const label=document.createElement('div');label.className='memory-label';label.textContent=['Our favourite','A little moment','Us','That day','Another memory','Always','Still smiling','My person','Forever','One for the books','Us again','♡'][i]||'Memory';card.appendChild(label);grid.appendChild(card)})});
 const audio=document.querySelector('#audio');const musicInput=document.querySelector('#musicInput');musicInput.addEventListener('change',e=>{const f=e.target.files[0];if(f){audio.src=URL.createObjectURL(f);audio.play().catch(()=>{});document.querySelector('.music label').textContent='♫ Your soundtrack is ready — use the button above to play/pause.'}});function toggleMusic(){if(!audio.src){document.querySelector('#musicInput').click();return}audio.paused?audio.play():audio.pause()}
-<script>
-const audio = document.getElementById("audio");
 
-function toggleMusic() {
-    if (audio.paused) {
-        audio.play().catch(error => {
-            console.log("Music could not start:", error);
-        });
-    } else {
-        audio.pause();
-    }
-}
-
-audio.volume = 0.5;
 </script></script></body></html>
