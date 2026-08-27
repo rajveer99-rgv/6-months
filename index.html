@@ -64,42 +64,83 @@ footer{text-align:center;padding:100px 20px 55px;color:#796671;font-size:11px;le
 
 <section><div class="section-head"><div class="eyebrow">Little details I never want to forget</div><h2>A few of your favorite things.</h2></div><div class="counter"><div class="stat"><strong>11</strong><small>June · birthday</small></div><div class="stat"><strong>♥</strong><small>Biryani · comfort food</small></div><div class="stat"><strong>♡</strong><small>White & lavender · palette</small></div><div class="stat"><strong>🦢</strong><small>Swan · grace & spirit</small></div></div><div class="milestone">Favorite bloom: <b>Tulips</b> 🌷</div></section>
 
-<section id="memories"><div class="section-head"><div class="eyebrow">Your memories belong here</div><h2>Our memory wall.</h2><p>Add your photos directly from your phone or laptop. They stay in this browser — nothing is uploaded anywhere.</p></div>
-<div class="memories" id="memoryGrid">
-<div class="memory big">
-    <img src="photos/me.jpeg" alt="Our favourite memory">
-    <div class="memory-label">OUR FAVOURITE ❤️</div>
-</div>
-<div class="memories" id="memoryGrid">
-<div class="memory big">
-    <img src="photos/me1.jpeg" alt="heart warming hug">
-    <div class="memory-label">WARM HUG ❤️</div>
-</div>
-<div class="memories" id="memoryGrid">
-<div class="memory big">
-    <img src="photos/me2.jpeg" alt="my kuchupuchu">
-    <div class="memory-label">SWEET KISS ❤️</div>
-</div>
-<div class="memories" id="memoryGrid">
-<div class="memory big">
-    <img src="photos/me3.jpeg" alt="hand to hand">
-    <div class="memory-label">LONG JOURNEY TOGETHER ❤️</div>
-</div>
-<div class="memories" id="memoryGrid">
-<div class="memory big">
-    <img src="photos/me4.jpeg" alt="Our favourite memory">
-    <div class="memory-label">MY HOME ❤️</div>
-</div>
-<div class="memories" id="memoryGrid">
-<div class="memory big">
-    <img src="photos/me5.jpeg" alt="Our favourite memory">
-    <div class="memory-label">WIFE AND HUSBAND ❤️</div>
-</div>
-</div>
+<section id="memories">
 
-<div class="upload-panel"><p><b>Make it yours:</b> select up to 12 photos and they'll appear in the wall.</p><input id="photoInput" type="file" accept="image/*" multiple></div>
-<div class="music"><label>Optional: choose a song from your device for this page (it stays local).</label><input id="musicInput" type="file" accept="audio/*"></div>
-<audio id="audio" loop></audio>
+    <div class="section-head">
+        <div class="eyebrow">Your memories belong here</div>
+        <h2>Our memory wall.</h2>
+        <p>
+            Add your photos directly from your phone or laptop.
+            They stay in this browser — nothing is uploaded anywhere.
+        </p>
+    </div>
+
+    <!-- MEMORY GALLERY -->
+    <div class="memories" id="memoryGrid">
+
+        <div class="memory big">
+            <img src="photos/me.jpeg" alt="Our favourite memory">
+            <div class="memory-label">OUR FAVOURITE ❤️</div>
+        </div>
+
+        <div class="memory big">
+            <img src="photos/me1.jpeg" alt="Heart warming hug">
+            <div class="memory-label">WARM HUG ❤️</div>
+        </div>
+
+        <div class="memory big">
+            <img src="photos/me2.jpeg" alt="Sweet kiss">
+            <div class="memory-label">SWEET KISS ❤️</div>
+        </div>
+
+        <div class="memory big">
+            <img src="photos/me3.jpeg" alt="Hand to hand">
+            <div class="memory-label">LONG JOURNEY TOGETHER ❤️</div>
+        </div>
+
+        <div class="memory big">
+            <img src="photos/me4.jpeg" alt="My home">
+            <div class="memory-label">MY HOME ❤️</div>
+        </div>
+
+        <div class="memory big">
+            <img src="photos/me5.jpeg" alt="Wife and husband">
+            <div class="memory-label">WIFE AND HUSBAND ❤️</div>
+        </div>
+
+    </div>
+
+    <!-- PHOTO UPLOAD -->
+    <div class="upload-panel">
+        <p>
+            <b>Make it yours:</b>
+            select up to 12 photos and they'll appear in the wall.
+        </p>
+
+        <input
+            id="photoInput"
+            type="file"
+            accept="image/*"
+            multiple
+        >
+    </div>
+
+    <!-- MUSIC -->
+    <div class="music">
+        <label>
+            Optional: choose a song from your device for this page
+            (it stays local).
+        </label>
+
+        <input
+            id="musicInput"
+            type="file"
+            accept="audio/*"
+        >
+    </div>
+
+    <audio id="audio" loop></audio>
+
 </section>
 
 <section id="letter"><div class="section-head"><div class="eyebrow">Open when you need a reminder</div><h2>A letter for you.</h2></div><div class="letter"><div class="salute">My love,</div><p>Six months, fifteen unforgettable dates, endless laughs, and a love that feels like home.</p><p>From our very first walk in BTM Park on Valentine’s Day to quiet afternoons at Lalbagh, every single second with you has made my world softer, brighter, and infinitely happier.</p><p>Thank you for being my peace, my favorite chef, and my greatest adventure. Thank you for every walk, every meal, every hug, every silly moment, and every memory that only the two of us could understand.</p><p>Somewhere along the way, places became <i>our</i> places. Food became memories. Ordinary afternoons became moments I never want to forget. And your arms became one of the few places where everything feels completely right.</p><p>Home isn't a place; it's you.</p><p>Happy 6-month anniversary, my love. Here is to a lifetime of more Lalbagh walks, tighter hugs, more of your legendary cooking, and forever with you.</p><div class="signature">Always yours ♡</div></div></section>
