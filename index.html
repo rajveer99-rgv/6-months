@@ -41,7 +41,7 @@ musicInput.addEventListener("change", function () {
     if (file) {
         const songURL = URL.createObjectURL(file);
 
-        audio.src = songURL;
+        audio.src = "music/song1.ogg";
         audio.volume = 0.5;
 
         audio.play().catch(() => {
