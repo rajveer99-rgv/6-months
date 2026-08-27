@@ -32,27 +32,7 @@ footer{text-align:center;padding:100px 20px 55px;color:#796671;font-size:11px;le
 </style>
 </head>
     
-<!-- YOUR SONG -->
-<audio id="audio" loop preload="auto">
-    <source src="music/song1.ogg" type="audio/ogg">
-</audio>
 
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-    const audio = document.getElementById("audio");
-
-    if (!audio) return;
-
-    audio.volume = 0.5;
-
-    // Music starts after the first tap/click
-    document.addEventListener("click", function playSong() {
-        audio.play().catch(function(error) {
-            console.log("Music could not start:", error);
-        });
-    }, { once: true });
-});
-</script>
 <body>
 <div id="loader"><div class="loader-inner"><div class="loader-heart">♡</div><p>Loading your little universe…</p></div></div>
 <div class="grain"></div><div id="hearts"></div>
