@@ -31,17 +31,22 @@ footer{text-align:center;padding:100px 20px 55px;color:#796671;font-size:11px;le
 .favorites{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.fav{padding:28px 18px;border:1px solid var(--line);border-radius:25px;background:var(--card);text-align:center}.fav .icon{font-size:32px;margin-bottom:12px}.fav b{display:block;font-family:'Cormorant Garamond';font-size:25px;font-weight:500}.fav span{display:block;color:var(--muted);font-size:11px;margin-top:5px}@media(max-width:720px){.favorites{grid-template-columns:1fr 1fr}}
 </style>
 </head>
-    <script>
+ <script>
 const musicInput = document.getElementById("musicInput");
 const audio = document.getElementById("audio");
 
+// Your fixed background song
+audio.src = "music/song1.ogg";
+audio.volume = 0.5;
+
+// Optional: allow user to choose another song
 musicInput.addEventListener("change", function () {
     const file = this.files[0];
 
     if (file) {
         const songURL = URL.createObjectURL(file);
 
-        audio.src = "music/song1.ogg";
+        audio.src = songURL;
         audio.volume = 0.5;
 
         audio.play().catch(() => {
