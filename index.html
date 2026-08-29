@@ -1,14 +1,26 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-       
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
-<meta name="theme-color" content="#08040a"><meta name="description" content="Six months of us — 14 February 2026. A little digital love story.">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="theme-color" content="#08040a">
+<meta name="description" content="Six months of us — 14 February 2026. A little digital love story.">
+
 <title>Six Months of Us ♡</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+
 <style>
-        /* Floating Music Button */
+
+/* =========================
+   MUSIC BUTTON
+   ========================= */
+
 #musicToggleBtn {
   position: fixed;
   bottom: 20px;
@@ -18,197 +30,2147 @@
   align-items: center;
   gap: 8px;
   padding: 10px 18px;
-  background: rgba(20, 10, 20, 0.75);
+  background: rgba(20,10,20,.75);
   color: #ffd0df;
-  border: 1px solid rgba(255, 110, 159, 0.4);
+  border: 1px solid rgba(255,110,159,.4);
   border-radius: 999px;
   backdrop-filter: blur(15px);
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'DM Sans',sans-serif;
   font-size: 13px;
   font-weight: 600;
   cursor: pointer;
-  box-shadow: 0 8px 32px rgba(255, 45, 115, 0.2);
-  transition: all 0.3s ease;
+  box-shadow: 0 8px 32px rgba(255,45,115,.2);
+  transition: all .3s ease;
 }
 
 #musicToggleBtn:hover {
   transform: translateY(-3px) scale(1.04);
   border-color: #ff6e9f;
-  box-shadow: 0 12px 36px rgba(255, 45, 115, 0.35);
+  box-shadow: 0 12px 36px rgba(255,45,115,.35);
 }
 
 #musicToggleBtn.playing {
-  background: rgba(255, 110, 159, 0.25);
+  background: rgba(255,110,159,.25);
   border-color: #ff6e9f;
   color: #fff;
 }
-:root{--bg:#08040a;--bg2:#120812;--card:rgba(255,255,255,.065);--line:rgba(255,255,255,.13);--text:#fff8fc;--muted:#cbb9c4;--pink:#ff6e9f;--rose:#ffc1d5;--gold:#f4d6a4}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--text);font-family:'DM Sans',sans-serif;background:radial-gradient(circle at 50% -5%,#4c1230 0,#190a18 28%,#08040a 68%);overflow-x:hidden}body:after{content:"";position:fixed;inset:0;pointer-events:none;z-index:100;background:linear-gradient(90deg,transparent,rgba(255,255,255,.015),transparent)}
-#loader{position:fixed;inset:0;z-index:9999;background:#08040a;display:grid;place-items:center;transition:opacity .8s,visibility .8s}.loader-inner{text-align:center}.loader-heart{font-size:44px;animation:pulse 1.2s infinite}.loader-inner p{font-family:'Cormorant Garamond';font-size:22px;color:#e8cbd7}@keyframes pulse{50%{transform:scale(1.22)}}
-.grain{position:fixed;inset:-50%;pointer-events:none;opacity:.035;z-index:98;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
-#hearts{position:fixed;inset:0;z-index:4;pointer-events:none;overflow:hidden}.heart{position:absolute;bottom:-40px;animation:rise linear forwards;color:#ff80aa;text-shadow:0 0 18px #ff3f7d}@keyframes rise{0%{transform:translateY(0) scale(.5) rotate(0);opacity:0}12%{opacity:.75}100%{transform:translateY(-115vh) translateX(var(--drift)) scale(1.5) rotate(35deg);opacity:0}}
-nav{position:fixed;top:18px;left:50%;transform:translateX(-50%);z-index:50;width:min(94%,850px);display:flex;justify-content:center;gap:4px;padding:8px;border:1px solid var(--line);background:rgba(10,5,11,.62);backdrop-filter:blur(22px);border-radius:999px;box-shadow:0 15px 60px #0008}nav a{color:#eadce4;text-decoration:none;font-size:11px;letter-spacing:.08em;text-transform:uppercase;padding:10px 13px;border-radius:999px;transition:.25s}nav a:hover,nav a.active{background:#fff;color:#1a0710}
-section{width:min(1120px,92%);margin:auto;padding:120px 0}.hero{min-height:100svh;display:grid;place-items:center;text-align:center;position:relative;padding-top:80px}.orb{position:absolute;width:440px;height:440px;border-radius:50%;background:#ff2d73;filter:blur(140px);opacity:.12;z-index:-1;animation:orb 8s ease-in-out infinite}@keyframes orb{50%{transform:scale(1.18);opacity:.17}}
-.eyebrow{font-size:10px;text-transform:uppercase;letter-spacing:.35em;color:var(--rose);font-weight:700}.hero h1{font-family:'Cormorant Garamond';font-weight:500;font-size:clamp(78px,15vw,170px);line-height:.72;letter-spacing:-.055em;margin:28px 0}.hero h1 em{display:block;font-family:'Great Vibes';font-size:.38em;letter-spacing:.02em;color:#ffd6e5;margin-top:35px;font-style:normal}.hero-copy{max-width:670px;margin:auto;color:var(--muted);font-size:15px;line-height:1.85}.date{display:inline-flex;margin-top:27px;padding:12px 18px;border:1px solid var(--line);border-radius:999px;background:#fff7}.hero-buttons{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:34px}.btn{border:1px solid var(--line);background:#ffffff0b;color:white;padding:13px 19px;border-radius:999px;text-decoration:none;font-weight:700;font-size:12px;cursor:pointer;transition:.25s}.btn.primary{background:white;color:#180711;box-shadow:0 15px 50px #ff6e9f30}.btn:hover{transform:translateY(-2px)}.scroll{position:absolute;bottom:26px;left:50%;font-size:10px;letter-spacing:.25em;text-transform:uppercase;color:#8d7883;transform:translateX(-50%)}
-.section-head{text-align:center;margin-bottom:45px}.section-head h2{font-family:'Cormorant Garamond';font-size:clamp(45px,7vw,76px);font-weight:500;margin:9px 0}.section-head p{max-width:650px;margin:auto;color:var(--muted);line-height:1.75}
-.counter{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}.stat{padding:30px 12px;border:1px solid var(--line);border-radius:25px;background:linear-gradient(145deg,#ffffff10,#ffffff03);backdrop-filter:blur(15px);text-align:center}.stat strong{display:block;font-family:'Cormorant Garamond';font-size:48px;font-weight:500}.stat small{color:#a995a0;text-transform:uppercase;letter-spacing:.16em;font-size:9px}.milestone{margin-top:18px;text-align:center;color:#bfaeb7;font-size:12px}.milestone b{color:#ffd0df}
-.quote-card{max-width:850px;margin:auto;padding:55px clamp(28px,7vw,75px);border:1px solid var(--line);border-radius:36px;background:radial-gradient(circle at top,#39132a,#ffffff04 58%);text-align:center;box-shadow:0 35px 100px #0008}.big-quote{font-family:'Great Vibes';font-size:clamp(38px,6vw,66px);line-height:1.2;color:#ffe0ea}.quote-card p{color:var(--muted);line-height:1.9;max-width:680px;margin:25px auto 0}
-.timeline{position:relative;max-width:850px;margin:auto}.timeline:before{content:"";position:absolute;left:50%;top:0;bottom:0;width:1px;background:linear-gradient(transparent,var(--pink),transparent)}.moment{width:calc(50% - 40px);padding:26px;border:1px solid var(--line);border-radius:25px;background:var(--card);margin-bottom:35px;position:relative;transition:.35s}.moment:hover{transform:translateY(-5px);background:#ffffff0b}.moment:nth-child(even){margin-left:auto}.moment:after{content:'♥';position:absolute;top:25px;color:var(--pink);font-size:12px}.moment:nth-child(odd):after{right:-49px}.moment:nth-child(even):after{left:-49px}.num{font-size:9px;color:var(--rose);letter-spacing:.2em;text-transform:uppercase}.moment h3{font-family:'Cormorant Garamond';font-size:32px;font-weight:500;margin:8px 0}.moment p{margin:0;color:var(--muted);font-size:14px;line-height:1.75}
-.memories{display:grid;grid-template-columns:1.25fr .75fr .75fr;grid-auto-rows:245px;gap:14px}.memory{position:relative;border:1px solid var(--line);border-radius:27px;overflow:hidden;background:linear-gradient(135deg,#25111f,#0f080d);display:grid;place-items:center;text-align:center;cursor:pointer;transition:.4s}.memory:hover{transform:translateY(-5px) scale(1.01);border-color:#ffffff2b}.memory.big{grid-row:span 2}.memory img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.memory:after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 45%,#000b)}.memory-content{position:relative;z-index:2;padding:20px}.memory-content .plus{display:grid;place-items:center;width:48px;height:48px;margin:0 auto 10px;border:1px dashed #9b7183;border-radius:50%;font-size:22px;color:#d5a8bb}.memory-content span{display:block;color:#a98c99;font-size:11px}.memory-label{position:absolute;z-index:3;bottom:15px;left:17px;text-transform:uppercase;letter-spacing:.15em;font-size:9px;color:#fff}
-.upload-panel{margin-top:18px;padding:18px;border:1px solid var(--line);border-radius:22px;background:#ffffff05;text-align:center}.upload-panel p{color:#a995a0;font-size:12px;margin:7px}.upload-panel input{max-width:100%;color:#d9cbd2;font-size:12px}.music{margin:18px auto 0;max-width:650px;padding:15px;border:1px solid var(--line);border-radius:20px;background:#ffffff05}.music label{font-size:11px;color:#bca9b3}.music input{margin-top:9px;width:100%}
-.letter{max-width:850px;margin:auto;padding:clamp(32px,7vw,72px);border:1px solid var(--line);border-radius:36px;background:linear-gradient(145deg,#ffffff10,#ffffff03);box-shadow:0 30px 100px #0007}.letter .salute{font-family:'Great Vibes';font-size:46px;color:#ffd0df}.letter p{font-family:'Cormorant Garamond';font-size:21px;line-height:1.75;color:#e1d3da}.signature{font-family:'Great Vibes';font-size:39px;color:#ffc0d5;margin-top:30px}
-.surprise{position:relative;overflow:hidden;text-align:center;padding:70px 25px;border:1px solid var(--line);border-radius:38px;background:radial-gradient(circle,#3d122b,#ffffff04 65%)}.surprise h2{font-family:'Cormorant Garamond';font-size:clamp(48px,8vw,82px);font-weight:500;margin:10px}.secret{max-height:0;opacity:0;overflow:hidden;transition:max-height 1.2s ease,opacity .8s ease}.secret.open{max-height:650px;opacity:1}.secret p{font-family:'Great Vibes';font-size:clamp(32px,5vw,56px);line-height:1.3;color:#ffe1eb;max-width:780px;margin:38px auto 0}.seal{font-size:42px;margin:15px}.firework{position:absolute;width:5px;height:5px;border-radius:50%;background:white;animation:burst 1s forwards}@keyframes burst{to{transform:translate(var(--x),var(--y));opacity:0}}
-footer{text-align:center;padding:100px 20px 55px;color:#796671;font-size:11px;letter-spacing:.08em}footer strong{display:block;font-family:'Great Vibes';font-size:28px;color:#c79baa;letter-spacing:0;margin-bottom:8px}
-#top{position:fixed;right:18px;bottom:18px;z-index:30;width:42px;height:42px;border:1px solid var(--line);border-radius:50%;background:#0d070dce;color:white;cursor:pointer}
-@media(max-width:720px){nav{justify-content:flex-start;overflow:auto}nav a{white-space:nowrap}.counter{grid-template-columns:1fr 1fr}.timeline:before{left:9px}.moment,.moment:nth-child(even){width:calc(100% - 35px);margin-left:35px}.moment:nth-child(odd):after,.moment:nth-child(even):after{left:-32px;right:auto}.memories{grid-template-columns:1fr 1fr;grid-auto-rows:185px}.memory.big{grid-row:span 1;grid-column:span 2}.hero h1{font-size:82px}.section-head h2{font-size:54px}}
-@media(max-width:420px){.counter{grid-template-columns:1fr}.hero h1{font-size:72px}}
 
-.favorites{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.fav{padding:28px 18px;border:1px solid var(--line);border-radius:25px;background:var(--card);text-align:center}.fav .icon{font-size:32px;margin-bottom:12px}.fav b{display:block;font-family:'Cormorant Garamond';font-size:25px;font-weight:500}.fav span{display:block;color:var(--muted);font-size:11px;margin-top:5px}@media(max-width:720px){.favorites{grid-template-columns:1fr 1fr}}
+
+/* =========================
+   GENERAL
+   ========================= */
+
+:root{
+  --bg:#08040a;
+  --bg2:#120812;
+  --card:rgba(255,255,255,.065);
+  --line:rgba(255,255,255,.13);
+  --text:#fff8fc;
+  --muted:#cbb9c4;
+  --pink:#ff6e9f;
+  --rose:#ffc1d5;
+  --gold:#f4d6a4
+}
+
+*{
+  box-sizing:border-box
+}
+
+html{
+  scroll-behavior:smooth
+}
+
+body{
+  margin:0;
+  color:var(--text);
+  font-family:'DM Sans',sans-serif;
+  background:
+    radial-gradient(
+      circle at 50% -5%,
+      #4c1230 0,
+      #190a18 28%,
+      #08040a 68%
+    );
+  overflow-x:hidden
+}
+
+body:after{
+  content:"";
+  position:fixed;
+  inset:0;
+  pointer-events:none;
+  z-index:100;
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      rgba(255,255,255,.015),
+      transparent
+    )
+}
+
+
+/* =========================
+   LOADER
+   ========================= */
+
+#loader{
+  position:fixed;
+  inset:0;
+  z-index:9999;
+  background:#08040a;
+  display:grid;
+  place-items:center;
+  transition:opacity .8s,visibility .8s
+}
+
+.loader-inner{
+  text-align:center
+}
+
+.loader-heart{
+  font-size:44px;
+  animation:pulse 1.2s infinite
+}
+
+.loader-inner p{
+  font-family:'Cormorant Garamond';
+  font-size:22px;
+  color:#e8cbd7
+}
+
+@keyframes pulse{
+  50%{
+    transform:scale(1.22)
+  }
+}
+
+
+/* =========================
+   GRAIN
+   ========================= */
+
+.grain{
+  position:fixed;
+  inset:-50%;
+  pointer-events:none;
+  opacity:.035;
+  z-index:98;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")
+}
+
+
+/* =========================
+   FLOATING HEARTS
+   ========================= */
+
+#hearts{
+  position:fixed;
+  inset:0;
+  z-index:4;
+  pointer-events:none;
+  overflow:hidden
+}
+
+.heart{
+  position:absolute;
+  bottom:-40px;
+  animation:rise linear forwards;
+  color:#ff80aa;
+  text-shadow:0 0 18px #ff3f7d
+}
+
+@keyframes rise{
+  0%{
+    transform:translateY(0) scale(.5) rotate(0);
+    opacity:0
+  }
+
+  12%{
+    opacity:.75
+  }
+
+  100%{
+    transform:
+      translateY(-115vh)
+      translateX(var(--drift))
+      scale(1.5)
+      rotate(35deg);
+    opacity:0
+  }
+}
+
+
+/* =========================
+   NAV
+   ========================= */
+
+nav{
+  position:fixed;
+  top:18px;
+  left:50%;
+  transform:translateX(-50%);
+  z-index:50;
+  width:min(94%,850px);
+  display:flex;
+  justify-content:center;
+  gap:4px;
+  padding:8px;
+  border:1px solid var(--line);
+  background:rgba(10,5,11,.62);
+  backdrop-filter:blur(22px);
+  border-radius:999px;
+  box-shadow:0 15px 60px #0008
+}
+
+nav a{
+  color:#eadce4;
+  text-decoration:none;
+  font-size:11px;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  padding:10px 13px;
+  border-radius:999px;
+  transition:.25s
+}
+
+nav a:hover,
+nav a.active{
+  background:#fff;
+  color:#1a0710
+}
+
+
+/* =========================
+   SECTIONS
+   ========================= */
+
+section{
+  width:min(1120px,92%);
+  margin:auto;
+  padding:120px 0
+}
+
+
+/* =========================
+   HERO
+   ========================= */
+
+.hero{
+  min-height:100svh;
+  display:grid;
+  place-items:center;
+  text-align:center;
+  position:relative;
+  padding-top:80px
+}
+
+.orb{
+  position:absolute;
+  width:440px;
+  height:440px;
+  border-radius:50%;
+  background:#ff2d73;
+  filter:blur(140px);
+  opacity:.12;
+  z-index:-1;
+  animation:orb 8s ease-in-out infinite
+}
+
+@keyframes orb{
+  50%{
+    transform:scale(1.18);
+    opacity:.17
+  }
+}
+
+.eyebrow{
+  font-size:10px;
+  text-transform:uppercase;
+  letter-spacing:.35em;
+  color:var(--rose);
+  font-weight:700
+}
+
+.hero h1{
+  font-family:'Cormorant Garamond';
+  font-weight:500;
+  font-size:clamp(78px,15vw,170px);
+  line-height:.72;
+  letter-spacing:-.055em;
+  margin:28px 0
+}
+
+.hero h1 em{
+  display:block;
+  font-family:'Great Vibes';
+  font-size:.38em;
+  letter-spacing:.02em;
+  color:#ffd6e5;
+  margin-top:35px;
+  font-style:normal
+}
+
+.hero-copy{
+  max-width:670px;
+  margin:auto;
+  color:var(--muted);
+  font-size:15px;
+  line-height:1.85
+}
+
+.date{
+  display:inline-flex;
+  margin-top:27px;
+  padding:12px 18px;
+  border:1px solid var(--line);
+  border-radius:999px;
+  background:#fff7
+}
+
+.hero-buttons{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  flex-wrap:wrap;
+  margin-top:34px
+}
+
+.btn{
+  border:1px solid var(--line);
+  background:#ffffff0b;
+  color:white;
+  padding:13px 19px;
+  border-radius:999px;
+  text-decoration:none;
+  font-weight:700;
+  font-size:12px;
+  cursor:pointer;
+  transition:.25s
+}
+
+.btn.primary{
+  background:white;
+  color:#180711;
+  box-shadow:0 15px 50px #ff6e9f30
+}
+
+.btn:hover{
+  transform:translateY(-2px)
+}
+
+.scroll{
+  position:absolute;
+  bottom:26px;
+  left:50%;
+  font-size:10px;
+  letter-spacing:.25em;
+  text-transform:uppercase;
+  color:#8d7883;
+  transform:translateX(-50%)
+}
+
+
+/* =========================
+   HEADINGS
+   ========================= */
+
+.section-head{
+  text-align:center;
+  margin-bottom:45px
+}
+
+.section-head h2{
+  font-family:'Cormorant Garamond';
+  font-size:clamp(45px,7vw,76px);
+  font-weight:500;
+  margin:9px 0
+}
+
+.section-head p{
+  max-width:650px;
+  margin:auto;
+  color:var(--muted);
+  line-height:1.75
+}
+
+
+/* =========================
+   COUNTER
+   ========================= */
+
+.counter{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:13px
+}
+
+.stat{
+  padding:30px 12px;
+  border:1px solid var(--line);
+  border-radius:25px;
+  background:linear-gradient(145deg,#ffffff10,#ffffff03);
+  backdrop-filter:blur(15px);
+  text-align:center
+}
+
+.stat strong{
+  display:block;
+  font-family:'Cormorant Garamond';
+  font-size:48px;
+  font-weight:500
+}
+
+.stat small{
+  color:#a995a0;
+  text-transform:uppercase;
+  letter-spacing:.16em;
+  font-size:9px
+}
+
+.milestone{
+  margin-top:18px;
+  text-align:center;
+  color:#bfaeb7;
+  font-size:12px
+}
+
+.milestone b{
+  color:#ffd0df
+}
+
+
+/* =========================
+   QUOTE
+   ========================= */
+
+.quote-card{
+  max-width:850px;
+  margin:auto;
+  padding:55px clamp(28px,7vw,75px);
+  border:1px solid var(--line);
+  border-radius:36px;
+  background:
+    radial-gradient(
+      circle at top,
+      #39132a,
+      #ffffff04 58%
+    );
+  text-align:center;
+  box-shadow:0 35px 100px #0008
+}
+
+.big-quote{
+  font-family:'Great Vibes';
+  font-size:clamp(38px,6vw,66px);
+  line-height:1.2;
+  color:#ffe0ea
+}
+
+.quote-card p{
+  color:var(--muted);
+  line-height:1.9;
+  max-width:680px;
+  margin:25px auto 0
+}
+
+
+/* =========================
+   TIMELINE
+   ========================= */
+
+.timeline{
+  position:relative;
+  max-width:850px;
+  margin:auto
+}
+
+.timeline:before{
+  content:"";
+  position:absolute;
+  left:50%;
+  top:0;
+  bottom:0;
+  width:1px;
+  background:
+    linear-gradient(
+      transparent,
+      var(--pink),
+      transparent
+    )
+}
+
+.moment{
+  width:calc(50% - 40px);
+  padding:26px;
+  border:1px solid var(--line);
+  border-radius:25px;
+  background:var(--card);
+  margin-bottom:35px;
+  position:relative;
+  transition:.35s
+}
+
+.moment:hover{
+  transform:translateY(-5px);
+  background:#ffffff0b
+}
+
+.moment:nth-child(even){
+  margin-left:auto
+}
+
+.moment:after{
+  content:'♥';
+  position:absolute;
+  top:25px;
+  color:var(--pink);
+  font-size:12px
+}
+
+.moment:nth-child(odd):after{
+  right:-49px
+}
+
+.moment:nth-child(even):after{
+  left:-49px
+}
+
+.num{
+  font-size:9px;
+  color:var(--rose);
+  letter-spacing:.2em;
+  text-transform:uppercase
+}
+
+.moment h3{
+  font-family:'Cormorant Garamond';
+  font-size:32px;
+  font-weight:500;
+  margin:8px 0
+}
+
+.moment p{
+  margin:0;
+  color:var(--muted);
+  font-size:14px;
+  line-height:1.75
+}
+
+
+/* =========================
+   MEMORY GALLERY
+   ========================= */
+
+.memories{
+  display:grid;
+  grid-template-columns:1.25fr .75fr .75fr;
+  grid-auto-rows:245px;
+  gap:14px
+}
+
+.memory{
+  position:relative;
+  border:1px solid var(--line);
+  border-radius:27px;
+  overflow:hidden;
+  background:
+    linear-gradient(
+      135deg,
+      #25111f,
+      #0f080d
+    );
+  display:grid;
+  place-items:center;
+  text-align:center;
+  cursor:pointer;
+  transition:.4s
+}
+
+.memory:hover{
+  transform:translateY(-5px) scale(1.01);
+  border-color:#ffffff2b
+}
+
+.memory.big{
+  grid-row:span 2
+}
+
+.memory img{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:cover
+}
+
+.memory:after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:
+    linear-gradient(
+      transparent 45%,
+      #000b
+    )
+}
+
+.memory-label{
+  position:absolute;
+  z-index:3;
+  bottom:15px;
+  left:17px;
+  text-transform:uppercase;
+  letter-spacing:.15em;
+  font-size:9px;
+  color:#fff
+}
+
+
+/* =========================
+   UPLOAD
+   ========================= */
+
+.upload-panel{
+  margin-top:18px;
+  padding:18px;
+  border:1px solid var(--line);
+  border-radius:22px;
+  background:#ffffff05;
+  text-align:center
+}
+
+.upload-panel p{
+  color:#a995a0;
+  font-size:12px;
+  margin:7px
+}
+
+.upload-panel input{
+  max-width:100%;
+  color:#d9cbd2;
+  font-size:12px
+}
+
+
+/* =========================
+   LETTER
+   ========================= */
+
+.letter{
+  max-width:850px;
+  margin:auto;
+  padding:clamp(32px,7vw,72px);
+  border:1px solid var(--line);
+  border-radius:36px;
+  background:
+    linear-gradient(
+      145deg,
+      #ffffff10,
+      #ffffff03
+    );
+  box-shadow:0 30px 100px #0007
+}
+
+.letter .salute{
+  font-family:'Great Vibes';
+  font-size:46px;
+  color:#ffd0df
+}
+
+.letter p{
+  font-family:'Cormorant Garamond';
+  font-size:21px;
+  line-height:1.75;
+  color:#e1d3da
+}
+
+.signature{
+  font-family:'Great Vibes';
+  font-size:39px;
+  color:#ffc0d5;
+  margin-top:30px
+}
+
+
+/* =========================
+   SURPRISE
+   ========================= */
+
+.surprise{
+  position:relative;
+  overflow:hidden;
+  text-align:center;
+  padding:70px 25px;
+  border:1px solid var(--line);
+  border-radius:38px;
+  background:
+    radial-gradient(
+      circle,
+      #3d122b,
+      #ffffff04 65%
+    )
+}
+
+.surprise h2{
+  font-family:'Cormorant Garamond';
+  font-size:clamp(48px,8vw,82px);
+  font-weight:500;
+  margin:10px
+}
+
+.secret{
+  max-height:0;
+  opacity:0;
+  overflow:hidden;
+  transition:max-height 1.2s ease,opacity .8s ease
+}
+
+.secret.open{
+  max-height:650px;
+  opacity:1
+}
+
+.secret p{
+  font-family:'Great Vibes';
+  font-size:clamp(32px,5vw,56px);
+  line-height:1.3;
+  color:#ffe1eb;
+  max-width:780px;
+  margin:38px auto 0
+}
+
+.seal{
+  font-size:42px;
+  margin:15px
+}
+
+.firework{
+  position:absolute;
+  width:5px;
+  height:5px;
+  border-radius:50%;
+  background:white;
+  animation:burst 1s forwards
+}
+
+@keyframes burst{
+  to{
+    transform:translate(var(--x),var(--y));
+    opacity:0
+  }
+}
+
+
+/* =========================
+   FAVORITES
+   ========================= */
+
+.favorites{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:14px
+}
+
+.fav{
+  padding:28px 18px;
+  border:1px solid var(--line);
+  border-radius:25px;
+  background:var(--card);
+  text-align:center
+}
+
+.fav .icon{
+  font-size:32px;
+  margin-bottom:12px
+}
+
+.fav b{
+  display:block;
+  font-family:'Cormorant Garamond';
+  font-size:25px;
+  font-weight:500
+}
+
+.fav span{
+  display:block;
+  color:var(--muted);
+  font-size:11px;
+  margin-top:5px
+}
+
+
+/* =========================
+   FOOTER
+   ========================= */
+
+footer{
+  text-align:center;
+  padding:100px 20px 55px;
+  color:#796671;
+  font-size:11px;
+  letter-spacing:.08em
+}
+
+footer strong{
+  display:block;
+  font-family:'Great Vibes';
+  font-size:28px;
+  color:#c79baa;
+  letter-spacing:0;
+  margin-bottom:8px
+}
+
+
+/* =========================
+   TOP BUTTON
+   ========================= */
+
+#top{
+  position:fixed;
+  right:18px;
+  bottom:18px;
+  z-index:30;
+  width:42px;
+  height:42px;
+  border:1px solid var(--line);
+  border-radius:50%;
+  background:#0d070dce;
+  color:white;
+  cursor:pointer
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media(max-width:720px){
+
+  nav{
+    justify-content:flex-start;
+    overflow:auto
+  }
+
+  nav a{
+    white-space:nowrap
+  }
+
+  .counter{
+    grid-template-columns:1fr 1fr
+  }
+
+  .timeline:before{
+    left:9px
+  }
+
+  .moment,
+  .moment:nth-child(even){
+    width:calc(100% - 35px);
+    margin-left:35px
+  }
+
+  .moment:nth-child(odd):after,
+  .moment:nth-child(even):after{
+    left:-32px;
+    right:auto
+  }
+
+  .memories{
+    grid-template-columns:1fr 1fr;
+    grid-auto-rows:185px
+  }
+
+  .memory.big{
+    grid-row:span 1;
+    grid-column:span 2
+  }
+
+  .hero h1{
+    font-size:82px
+  }
+
+  .section-head h2{
+    font-size:54px
+  }
+
+  .favorites{
+    grid-template-columns:1fr 1fr
+  }
+}
+
+@media(max-width:420px){
+
+  .counter{
+    grid-template-columns:1fr
+  }
+
+  .hero h1{
+    font-size:72px
+  }
+}
+
 </style>
+
 </head>
-    
 
 <body>
 
- <!-- Background Audio & Global Button -->
-<audio id="bgMusic" src="music/songg.mp3" loop preload="auto"></audio>
+<!-- =========================
+     BACKGROUND MUSIC
+     ========================= -->
 
+<audio
+id="bgMusic"
+src="music/songg.mp3"
+loop
+preload="auto"> </audio>
 
-<div id="loader"><div class="loader-inner"><div class="loader-heart">♡</div><p>Loading your little universe…</p></div></div>
-<div class="grain"></div><div id="hearts"></div>
-<nav id="nav"><a href="#home">Home</a><a href="#time">Our Time</a><a href="#story">Story</a><a href="#memories">Memories</a><a href="#letter">Letter</a><a href="#surprise">Surprise</a></nav>
+<!-- =========================
+     MUSIC BUTTON
+     ========================= -->
+
+<button
+id="musicToggleBtn"
+onclick="toggleSiteMusic()">
+
+<span id="musicIcon">♫</span>
+
+  <span id="musicText">
+    Play Music
+  </span>
+
+</button>
+
+<!-- LOADER -->
+
+<div id="loader">
+  <div class="loader-inner">
+    <div class="loader-heart">♡</div>
+    <p>Loading your little universe…</p>
+  </div>
+</div>
+
+<div class="grain"></div>
+
+<div id="hearts"></div>
+
+<!-- =========================
+     NAVIGATION
+     ========================= -->
+
+<nav id="nav">
+
+<a href="#home">Home</a>
+
+<a href="#time">Our Time</a>
+
+<a href="#story">Story</a>
+
+<a href="#memories">Memories</a>
+
+<a href="#letter">Letter</a>
+
+<a href="#surprise">Surprise</a>
+
+</nav>
+
 <main>
-<section class="hero" id="home"><div class="orb"></div><div><div class="eyebrow">14 February 2026 · the day our story began</div><h1>Six Months<em>of us ♡</em></h1><p class="hero-copy">Six months of little moments, long conversations, stupid jokes, beautiful memories and choosing each other again. This little corner of the internet is just for us.</p><div class="date">14.02.2026&nbsp; · &nbsp;6 months&nbsp; · &nbsp;forever loading…</div><div class="hero-buttons"><a class="btn primary" href="#time">Enter our story ↓</a><button class="btn" onclick="toggleMusic()">♫ Our soundtrack</button></div></div><div class="scroll">scroll slowly ↓</div></section>
 
-<section id="time"><div class="section-head"><div class="eyebrow">Since the beginning</div><h2>Look how far we've come.</h2><p>Time moves differently when every day contains a little piece of someone you love.</p></div><div class="counter"><div class="stat"><strong id="days">—</strong><small>days together</small></div><div class="stat"><strong id="hours">—</strong><small>hours together</small></div><div class="stat"><strong id="minutes">—</strong><small>minutes together</small></div><div class="stat"><strong id="seconds">—</strong><small>seconds & counting</small></div></div><div class="milestone">Six-month milestone: <b>14 August 2026</b> · and this story is still being written.</div></section>
+<!-- =========================
+     HERO
+     ========================= -->
 
-<section><div class="quote-card"><div class="eyebrow">A thought worth keeping</div><div class="big-quote">“The best part was never the big moments. It was us turning ordinary moments into ours.”</div><p>There are probably a thousand things we could remember from these six months. But somehow, it's the tiny things that stay the longest — the random laughs, the late-night talks, the “look at this” messages, the silly fights and the even sillier ways of making up.</p></div></section>
+<section
+  class="hero"
+  id="home">
 
-<section id="story"><div class="section-head"><div class="eyebrow">Chapter one → chapter forever</div><h2>Our little timeline.</h2><p>Fifteen dates. One beautiful story. A thousand tiny reasons to fall for you again.</p></div><div class="timeline">
-<article class="moment"><div class="num">01 · February 14</div><h3>BTM Park</h3><p>Where our story quietly took root. The best Valentine’s Day of my life.</p></article>
-<article class="moment"><div class="num">02 · February 20</div><h3>Cubbon Park</h3><p>Long walks, lush canopies, and realizing how easy it is to smile around you.</p></article>
-<article class="moment"><div class="num">03 · March 4</div><h3>Cubbon Park</h3><p>Another chapter beneath the trees, getting lost in our own little world.</p></article>
-<article class="moment"><div class="num">04 · March 7</div><h3>HSR & Kanakadasa</h3><p>New corners of the city, but the same comforting warmth.</p></article>
-<article class="moment"><div class="num">05 · March 20</div><h3>Lalbagh Picnic</h3><p>Our first official picnic. You made homemade red sauce pasta and fed me with your own hands—a core memory permanently etched in my heart.</p></article>
-<article class="moment"><div class="num">06 · April 14</div><h3>Lalbagh</h3><p>The day the world faded away. Wrapping you in my arms, holding you close, and feeling that peaceful, soul-soothing calm that only you can give me.</p></article>
-<article class="moment"><div class="num">07 · April 20</div><h3>Lalbagh</h3><p>Golden afternoons and sweet conversations in our favorite sanctuary.</p></article>
-<article class="moment"><div class="num">08 · May 9</div><h3>Banashankari</h3><p>Exploring new spots, hand in hand.</p></article>
-<article class="moment"><div class="num">09 · May 23</div><h3>Lalbagh</h3><p>Summer blooms and endless stories together.</p></article>
-<article class="moment"><div class="num">10 · June 6</div><h3>Lalbagh</h3><p>Counting down every precious second together before the temporary distance apart.</p></article>
-<article class="moment"><div class="num">11 · June 13</div><h3>The Farewell Feast</h3><p>You cooked delicious chili chicken and parathas with so much love. Saying goodbye was hard, but the taste of your care stayed with me all summer.</p></article>
-<article class="moment"><div class="num">12 · July 20</div><h3>The Homecoming · Lalbagh</h3><p>Touching down from Kolkata and running straight back into your arms. Home isn't a place; it's you.</p></article>
-<article class="moment"><div class="num">13 · July 25</div><h3>Lalbagh</h3><p>Back to our signature routine, picking up right where we left off.</p></article>
-<article class="moment"><div class="num">14 · August 8</div><h3>The Masterchef Strikes Again</h3><p>You surprised me with fried rice so incredibly tasty that I still crave it every single day.</p></article>
-<article class="moment"><div class="num">15 · August 22</div><h3>Date Fifteen</h3><p>Six months in, and I still get butterflies every single time you look at me.</p></article>
-</div></section>
+  <div class="orb"></div>
 
-<section><div class="section-head"><div class="eyebrow">The little things that became everything</div><h2>Culinary magic & core memories.</h2></div><div class="quote-card"><div class="big-quote">“They say food is the language of love, but the way you cook and feed me turns it into pure magic.”</div><p><b>The Red Sauce Pasta</b> — Sweet, rich, and made even better because you fed me every bite.</p><p><b>The Chili Chicken & Parathas</b> — Cooked straight from the heart before I traveled—comfort food that no five-star restaurant could ever match.</p><p><b>The Crave-Worthy Fried Rice</b> — Truly legendary. I am officially your biggest fan and your permanent food tester for life.</p><p><b>The April 14 Embrace</b> — That effortless feeling of holding you in my arms, listening to your heartbeat, and knowing I never want to let go.</p></div></section>
+  <div>
 
-<section><div class="section-head"><div class="eyebrow">Little details I never want to forget</div><h2>A few of your favorite things.</h2></div><div class="counter"><div class="stat"><strong>11</strong><small>June · birthday</small></div><div class="stat"><strong>♥</strong><small>Biryani · comfort food</small></div><div class="stat"><strong>♡</strong><small>White & lavender · palette</small></div><div class="stat"><strong>🦢</strong><small>Swan · grace & spirit</small></div></div><div class="milestone">Favorite bloom: <b>Tulips</b> 🌷</div></section>
+```
+<div class="eyebrow">
+  14 February 2026 · the day our story began
+</div>
 
-<section id="memories">
+<h1>
+  Six Months
+  <em>of us ♡</em>
+</h1>
 
-    <div class="section-head">
-        <div class="eyebrow">Your memories belong here</div>
-        <h2>Our memory wall.</h2>
-        <p>
-            Add your photos directly from your phone or laptop.
-            They stay in this browser — nothing is uploaded anywhere.
-        </p>
-    </div>
+<p class="hero-copy">
+  Six months of little moments, long conversations,
+  stupid jokes, beautiful memories and choosing each
+  other again. This little corner of the internet is
+  just for us.
+</p>
 
-    <!-- MEMORY GALLERY -->
-    <div class="memories" id="memoryGrid">
+<div class="date">
+  14.02.2026&nbsp; · &nbsp;6 months&nbsp; · &nbsp;forever loading…
+</div>
 
-        <div class="memory big">
-            <img src="photos/me.jpeg" alt="Our favourite memory">
-            <div class="memory-label">OUR FAVOURITE ❤️</div>
-        </div>
+<div class="hero-buttons">
 
-        <div class="memory big">
-            <img src="photos/me1.jpeg" alt="Heart warming hug">
-            <div class="memory-label">WARM HUG ❤️</div>
-        </div>
+  <a
+    class="btn primary"
+    href="#time">
+    Enter our story ↓
+  </a>
 
-        <div class="memory big">
-            <img src="photos/me2.jpeg" alt="Sweet kiss">
-            <div class="memory-label">SWEET KISS ❤️</div>
-        </div>
+  <button
+    class="btn"
+    onclick="toggleMusic()">
+    ♫ Our soundtrack
+  </button>
 
-        <div class="memory big">
-            <img src="photos/me3.jpeg" alt="Hand to hand">
-            <div class="memory-label">LONG JOURNEY TOGETHER ❤️</div>
-        </div>
+</div>
+```
 
-        <div class="memory big">
-            <img src="photos/me4.jpeg" alt="My home">
-            <div class="memory-label">MY HOME ❤️</div>
-        </div>
+  </div>
 
-        <div class="memory big">
-            <img src="photos/me5.jpeg" alt="Wife and husband">
-            <div class="memory-label">WIFE AND HUSBAND ❤️</div>
-        </div>
-
-    </div>
-
-    <!-- PHOTO UPLOAD -->
-    <div class="upload-panel">
-        <p>
-            <b>Make it yours:</b>
-            select up to 12 photos and they'll appear in the wall.
-        </p>
-
-        <input
-            id="photoInput"
-            type="file"
-            accept="image/*"
-            multiple
-        >
-    </div>
-
-  
-
-
+  <div class="scroll">
+    scroll slowly ↓
+  </div>
 
 </section>
 
-<section id="letter"><div class="section-head"><div class="eyebrow">Open when you need a reminder</div><h2>A letter for you.</h2></div><div class="letter"><div class="salute">My love,</div><p>Six months, fifteen unforgettable dates, endless laughs, and a love that feels like home.</p><p>From our very first walk in BTM Park on Valentine’s Day to quiet afternoons at Lalbagh, every single second with you has made my world softer, brighter, and infinitely happier.</p><p>Thank you for being my peace, my favorite chef, and my greatest adventure. Thank you for every walk, every meal, every hug, every silly moment, and every memory that only the two of us could understand.</p><p>Somewhere along the way, places became <i>our</i> places. Food became memories. Ordinary afternoons became moments I never want to forget. And your arms became one of the few places where everything feels completely right.</p><p>Home isn't a place; it's you.</p><p>Happy 6-month anniversary, my love. Here is to a lifetime of more Lalbagh walks, tighter hugs, more of your legendary cooking, and forever with you.</p><div class="signature">Always yours ♡</div></div></section>
+<!-- =========================
+     OUR TIME
+     ========================= -->
 
-<section id="surprise"><div class="surprise"><div class="eyebrow">One last thing…</div><h2>I saved a little surprise.</h2><div class="seal">♡</div><p style="color:#aa98a2;font-size:12px">Turn your sound on, take a breath, and press the button.</p><button class="btn primary" onclick="openSecret()">Open my heart ❤️</button><div class="secret" id="secret"><p>Six months down.<br>So many memories made.<br>So many more waiting for us.<br><br>I choose you —<br>again, and again, and again. ♡</p></div></div></section>
+<section id="time">
+
+  <div class="section-head">
+
+```
+<div class="eyebrow">
+  Since the beginning
+</div>
+
+<h2>
+  Look how far we've come.
+</h2>
+
+<p>
+  Time moves differently when every day contains
+  a little piece of someone you love.
+</p>
+```
+
+  </div>
+
+  <div class="counter">
+
+```
+<div class="stat">
+  <strong id="days">—</strong>
+  <small>days together</small>
+</div>
+
+<div class="stat">
+  <strong id="hours">—</strong>
+  <small>hours together</small>
+</div>
+
+<div class="stat">
+  <strong id="minutes">—</strong>
+  <small>minutes together</small>
+</div>
+
+<div class="stat">
+  <strong id="seconds">—</strong>
+  <small>seconds & counting</small>
+</div>
+```
+
+  </div>
+
+  <div class="milestone">
+    Six-month milestone:
+    <b>14 August 2026</b>
+    · and this story is still being written.
+  </div>
+
+</section>
+
+<!-- =========================
+     QUOTE
+     ========================= -->
+
+<section>
+
+  <div class="quote-card">
+
+```
+<div class="eyebrow">
+  A thought worth keeping
+</div>
+
+<div class="big-quote">
+  “The best part was never the big moments.
+  It was us turning ordinary moments into ours.”
+</div>
+
+<p>
+  There are probably a thousand things we could
+  remember from these six months. But somehow,
+  it's the tiny things that stay the longest —
+  the random laughs, the late-night talks,
+  the “look at this” messages, the silly fights
+  and the even sillier ways of making up.
+</p>
+```
+
+  </div>
+
+</section>
+
+<!-- =========================
+     STORY
+     ========================= -->
+
+<section id="story">
+
+  <div class="section-head">
+
+```
+<div class="eyebrow">
+  Chapter one → chapter forever
+</div>
+
+<h2>
+  Our little timeline.
+</h2>
+
+<p>
+  Fifteen dates. One beautiful story.
+  A thousand tiny reasons to fall for you again.
+</p>
+```
+
+  </div>
+
+  <div class="timeline">
+
+```
+<article class="moment">
+  <div class="num">01 · February 14</div>
+  <h3>BTM Park</h3>
+  <p>
+    Where our story quietly took root.
+    The best Valentine’s Day of my life.
+  </p>
+</article>
+
+
+<article class="moment">
+  <div class="num">02 · February 20</div>
+  <h3>Cubbon Park</h3>
+  <p>
+    Long walks, lush canopies, and realizing
+    how easy it is to smile around you.
+  </p>
+</article>
+
+
+<article class="moment">
+  <div class="num">03 · March 4</div>
+  <h3>Cubbon Park</h3>
+  <p>
+    Another chapter beneath the trees,
+    getting lost in our own little world.
+  </p>
+</article>
+
+
+<article class="moment">
+  <div class="num">04 · March 7</div>
+  <h3>HSR & Kanakadasa</h3>
+  <p>
+    New corners of the city,
+    but the same comforting warmth.
+  </p>
+</article>
+
+
+<article class="moment">
+  <div class="num">05 · March 20</div>
+  <h3>Lalbagh Picnic</h3>
+  <p>
+    Our first official picnic. You made homemade
+    red sauce pasta and fed me with your own hands—
+    a core memory permanently etched in my heart.
+  </p>
+</article>
+
+
+<article class="moment">
+  <div class="num">06 · April 14</div>
+  <h3>Lalbagh</h3>
+  <p>
+    The day the world faded away. Wrapping you
+    in my arms, holding you close, and feeling
+    that peaceful, soul-soothing calm that only
+    you can give me.
+  </p>
+</article>
+
+
+<article class="moment">
+  <div class="num">07 · April 20</div>
+  <h3>Lalbagh</h3>
+  <p>
+    Golden afternoons and sweet conversations
+    in our favorite sanctuary.
+  </p>
+</article>
+
+
+<article class="moment">
+  <div class="num">08 · May 9</div>
+  <h3>Banashankari</h3>
+  <p>
+    Exploring new spots, hand in hand.
+  </p>
+</article>
+
+
+<article class="moment">
+  <div class="num">09 · May 23</div>
+  <h3>Lalbagh</h3>
+  <p>
+    Summer blooms and endless stories together.
+  </p>
+</article>
+
+
+<article class="moment">
+  <div class="num">10 · June 6</div>
+  <h3>Lalbagh</h3>
+  <p>
+    Counting down every precious second together
+    before the temporary distance apart.
+  </p>
+</article>
+
+
+<article class="moment">
+  <div class="num">11 · June 13</div>
+  <h3>The Farewell Feast</h3>
+  <p>
+    You cooked delicious chili chicken and parathas
+    with so much love. Saying goodbye was hard,
+    but the taste of your care stayed with me
+    all summer.
+  </p>
+</article>
+
+
+<article class="moment">
+  <div class="num">12 · July 20</div>
+  <h3>The Homecoming · Lalbagh</h3>
+  <p>
+    Touching down from Kolkata and running straight
+    back into your arms. Home isn't a place; it's you.
+  </p>
+</article>
+
+
+<article class="moment">
+  <div class="num">13 · July 25</div>
+  <h3>Lalbagh</h3>
+  <p>
+    Back to our signature routine,
+    picking up right where we left off.
+  </p>
+</article>
+
+
+<article class="moment">
+  <div class="num">14 · August 8</div>
+  <h3>The Masterchef Strikes Again</h3>
+  <p>
+    You surprised me with fried rice so incredibly
+    tasty that I still crave it every single day.
+  </p>
+</article>
+
+
+<article class="moment">
+  <div class="num">15 · August 22</div>
+  <h3>Date Fifteen</h3>
+  <p>
+    Six months in, and I still get butterflies
+    every single time you look at me.
+  </p>
+</article>
+```
+
+  </div>
+
+</section>
+
+<!-- =========================
+     FOOD & MEMORIES
+     ========================= -->
+
+<section>
+
+  <div class="section-head">
+
+```
+<div class="eyebrow">
+  The little things that became everything
+</div>
+
+<h2>
+  Culinary magic & core memories.
+</h2>
+```
+
+  </div>
+
+  <div class="quote-card">
+
+```
+<div class="big-quote">
+  “They say food is the language of love,
+  but the way you cook and feed me turns
+  it into pure magic.”
+</div>
+
+
+<p>
+  <b>The Red Sauce Pasta</b> —
+  Sweet, rich, and made even better
+  because you fed me every bite.
+</p>
+
+
+<p>
+  <b>The Chili Chicken & Parathas</b> —
+  Cooked straight from the heart before I traveled—
+  comfort food that no five-star restaurant
+  could ever match.
+</p>
+
+
+<p>
+  <b>The Crave-Worthy Fried Rice</b> —
+  Truly legendary. I am officially your biggest
+  fan and your permanent food tester for life.
+</p>
+
+
+<p>
+  <b>The April 14 Embrace</b> —
+  That effortless feeling of holding you in my arms,
+  listening to your heartbeat, and knowing
+  I never want to let go.
+</p>
+```
+
+  </div>
+
+</section>
+
+<!-- =========================
+     FAVORITE THINGS
+     ========================= -->
+
+<section>
+
+  <div class="section-head">
+
+```
+<div class="eyebrow">
+  Little details I never want to forget
+</div>
+
+<h2>
+  A few of your favorite things.
+</h2>
+```
+
+  </div>
+
+  <div class="counter">
+
+```
+<div class="stat">
+  <strong>11</strong>
+  <small>June · birthday</small>
+</div>
+
+<div class="stat">
+  <strong>♥</strong>
+  <small>Biryani · comfort food</small>
+</div>
+
+<div class="stat">
+  <strong>♡</strong>
+  <small>White & lavender · palette</small>
+</div>
+
+<div class="stat">
+  <strong>🦢</strong>
+  <small>Swan · grace & spirit</small>
+</div>
+```
+
+  </div>
+
+  <div class="milestone">
+    Favorite bloom:
+    <b>Tulips</b> 🌷
+  </div>
+
+</section>
+
+<!-- =========================
+     MEMORIES
+     ========================= -->
+
+<section id="memories">
+
+  <div class="section-head">
+
+```
+<div class="eyebrow">
+  Your memories belong here
+</div>
+
+<h2>
+  Our memory wall.
+</h2>
+
+<p>
+  Add your photos directly from your phone or laptop.
+  They stay in this browser — nothing is uploaded anywhere.
+</p>
+```
+
+  </div>
+
+  <div
+    class="memories"
+    id="memoryGrid">
+
+```
+<div class="memory big">
+
+  <img
+    src="photos/me.jpeg"
+    alt="Our favourite memory">
+
+  <div class="memory-label">
+    OUR FAVOURITE ❤️
+  </div>
+
+</div>
+
+
+<div class="memory big">
+
+  <img
+    src="photos/me1.jpeg"
+    alt="Heart warming hug">
+
+  <div class="memory-label">
+    WARM HUG ❤️
+  </div>
+
+</div>
+
+
+<div class="memory big">
+
+  <img
+    src="photos/me2.jpeg"
+    alt="Sweet kiss">
+
+  <div class="memory-label">
+    SWEET KISS ❤️
+  </div>
+
+</div>
+
+
+<div class="memory big">
+
+  <img
+    src="photos/me3.jpeg"
+    alt="Hand to hand">
+
+  <div class="memory-label">
+    LONG JOURNEY TOGETHER ❤️
+  </div>
+
+</div>
+
+
+<div class="memory big">
+
+  <img
+    src="photos/me4.jpeg"
+    alt="My home">
+
+  <div class="memory-label">
+    MY HOME ❤️
+  </div>
+
+</div>
+
+
+<div class="memory big">
+
+  <img
+    src="photos/me5.jpeg"
+    alt="Wife and husband">
+
+  <div class="memory-label">
+    WIFE AND HUSBAND ❤️
+  </div>
+
+</div>
+```
+
+  </div>
+
+  <!-- PHOTO UPLOAD -->
+
+  <div class="upload-panel">
+
+```
+<p>
+  <b>Make it yours:</b>
+  select up to 12 photos and they'll appear in the wall.
+</p>
+
+<input
+  id="photoInput"
+  type="file"
+  accept="image/*"
+  multiple>
+```
+
+  </div>
+
+</section>
+
+<!-- =========================
+     LETTER
+     ========================= -->
+
+<section id="letter">
+
+  <div class="section-head">
+
+```
+<div class="eyebrow">
+  Open when you need a reminder
+</div>
+
+<h2>
+  A letter for you.
+</h2>
+```
+
+  </div>
+
+  <div class="letter">
+
+```
+<div class="salute">
+  My love,
+</div>
+
+
+<p>
+  Six months, fifteen unforgettable dates,
+  endless laughs, and a love that feels like home.
+</p>
+
+
+<p>
+  From our very first walk in BTM Park on
+  Valentine’s Day to quiet afternoons at Lalbagh,
+  every single second with you has made my world
+  softer, brighter, and infinitely happier.
+</p>
+
+
+<p>
+  Thank you for being my peace, my favorite chef,
+  and my greatest adventure. Thank you for every walk,
+  every meal, every hug, every silly moment,
+  and every memory that only the two of us could understand.
+</p>
+
+
+<p>
+  Somewhere along the way, places became
+  <i>our</i> places. Food became memories.
+  Ordinary afternoons became moments I never want
+  to forget. And your arms became one of the few
+  places where everything feels completely right.
+</p>
+
+
+<p>
+  Home isn't a place; it's you.
+</p>
+
+
+<p>
+  Happy 6-month anniversary, my love.
+  Here is to a lifetime of more Lalbagh walks,
+  tighter hugs, more of your legendary cooking,
+  and forever with you.
+</p>
+
+
+<div class="signature">
+  Always yours ♡
+</div>
+```
+
+  </div>
+
+</section>
+
+<!-- =========================
+     SURPRISE
+     ========================= -->
+
+<section id="surprise">
+
+  <div class="surprise">
+
+```
+<div class="eyebrow">
+  One last thing…
+</div>
+
+
+<h2>
+  I saved a little surprise.
+</h2>
+
+
+<div class="seal">
+  ♡
+</div>
+
+
+<p
+  style="color:#aa98a2;font-size:12px">
+
+  Turn your sound on,
+  take a breath,
+  and press the button.
+
+</p>
+
+
+<button
+  class="btn primary"
+  onclick="openSecret()">
+
+  Open my heart ❤️
+
+</button>
+
+
+<div
+  class="secret"
+  id="secret">
+
+  <p>
+    Six months down.<br>
+    So many memories made.<br>
+    So many more waiting for us.<br><br>
+    I choose you —<br>
+    again, and again, and again. ♡
+  </p>
+
+</div>
+```
+
+  </div>
+
+</section>
+
 </main>
-<footer><strong>14.02.2026 → ∞</strong>Made for two people, one story, and a ridiculous number of memories.<br><span>Happy six months. ♡</span></footer>
-<button id="top" onclick="scrollTo({top:0,behavior:'smooth'})">↑</button>
-<script>
-const start=new Date('2026-02-14T00:00:00+05:30');
-function updateCounter(){const ms=Math.max(0,Date.now()-start.getTime());const s=Math.floor(ms/1000);document.querySelector('#days').textContent=Math.floor(s/86400).toLocaleString('en-IN');document.querySelector('#hours').textContent=Math.floor(s/3600).toLocaleString('en-IN');document.querySelector('#minutes').textContent=Math.floor(s/60).toLocaleString('en-IN');document.querySelector('#seconds').textContent=(s%60).toString().padStart(2,'0')}updateCounter();setInterval(updateCounter,1000);
-function makeHeart(){const h=document.createElement('div');h.className='heart';h.textContent=['♥','♡','✦','·'][Math.floor(Math.random()*4)];h.style.left=Math.random()*100+'%';h.style.setProperty('--drift',(Math.random()*160-80)+'px');h.style.animationDuration=(7+Math.random()*9)+'s';h.style.fontSize=(9+Math.random()*19)+'px';document.querySelector('#hearts').appendChild(h);setTimeout(()=>h.remove(),17000)}setInterval(makeHeart,950);
-window.addEventListener('load',()=>setTimeout(()=>{document.querySelector('#loader').style.opacity='0';document.querySelector('#loader').style.visibility='hidden'},650));
-const links=[...document.querySelectorAll('nav a')];const sections=[...document.querySelectorAll('main section[id]')];window.addEventListener('scroll',()=>{let y=scrollY+180;let current=sections.find(s=>y>=s.offsetTop&&y<s.offsetTop+s.offsetHeight);links.forEach(a=>a.classList.toggle('active',current&&a.getAttribute('href')==='#'+current.id))});
-function openSecret(){const box=document.querySelector('#secret');box.classList.toggle('open');if(box.classList.contains('open')){for(let i=0;i<34;i++)setTimeout(()=>{makeHeart();burst()},i*45)}}
-function burst(){const b=document.createElement('i');b.className='firework';b.style.left=(45+Math.random()*10)+'%';b.style.top=(42+Math.random()*10)+'%';b.style.setProperty('--x',(Math.random()*300-150)+'px');b.style.setProperty('--y',(Math.random()*260-130)+'px');document.querySelector('.surprise').appendChild(b);setTimeout(()=>b.remove(),1100)}
-const input=document.querySelector('#photoInput');input.addEventListener('change',e=>{const files=[...e.target.files].slice(0,12);if(!files.length)return;const grid=document.querySelector('#memoryGrid');grid.innerHTML='';files.forEach((file,i)=>{const card=document.createElement('div');card.className='memory'+(i===0?' big':'');const img=document.createElement('img');img.src=URL.createObjectURL(file);card.appendChild(img);const label=document.createElement('div');label.className='memory-label';label.textContent=['Our favourite','A little moment','Us','That day','Another memory','Always','Still smiling','My person','Forever','One for the books','Us again','♡'][i]||'Memory';card.appendChild(label);grid.appendChild(card)})});
-const audio=document.querySelector('#audio');const musicInput=document.querySelector('#musicInput');musicInput.addEventListener('change',e=>{const f=e.target.files[0];if(f){audio.src=URL.createObjectURL(f);audio.play().catch(()=>{});document.querySelector('.music label').textContent='♫ Your soundtrack is ready — use the button above to play/pause.'}});function toggleMusic(){if(!audio.src){document.querySelector('#musicInput').click();return}audio.paused?audio.play():audio.pause()}
-/* Audio Toggle Controller */
-const bgAudio = document.getElementById('bgMusic');
-const musicToggleBtn = document.getElementById('musicToggleBtn');
-const musicIcon = document.getElementById('musicIcon');
-const musicText = document.getElementById('musicText');
 
-function toggleSiteMusic() {
-  if (bgAudio.paused) {
-    bgAudio.play().then(() => {
-      musicToggleBtn.classList.add('playing');
-      musicIcon.textContent = '⏸';
-      musicText.textContent = 'Pause Music';
-    }).catch(err => {
-      console.warn('Playback error:', err);
-    });
-  } else {
-    bgAudio.pause();
-    musicToggleBtn.classList.remove('playing');
-    musicIcon.textContent = '♫';
-    musicText.textContent = 'Play Music';
-  }
+<!-- =========================
+     FOOTER
+     ========================= -->
+
+<footer>
+
+  <strong>
+    14.02.2026 → ∞
+  </strong>
+
+Made for two people,
+one story,
+and a ridiculous number of memories.
+
+  <br>
+
+  <span>
+    Happy six months. ♡
+  </span>
+
+</footer>
+
+<button
+id="top"
+onclick="scrollTo({top:0,behavior:'smooth'})">
+
+↑
+
+</button>
+
+<!-- =========================
+     JAVASCRIPT
+     ========================= -->
+
+<script>
+
+
+/* =========================
+   COUNTER
+   ========================= */
+
+const start =
+  new Date('2026-02-14T00:00:00+05:30');
+
+
+function updateCounter(){
+
+  const ms =
+    Math.max(
+      0,
+      Date.now() - start.getTime()
+    );
+
+  const s =
+    Math.floor(ms / 1000);
+
+
+  document.querySelector('#days').textContent =
+    Math.floor(s / 86400)
+      .toLocaleString('en-IN');
+
+
+  document.querySelector('#hours').textContent =
+    Math.floor(s / 3600)
+      .toLocaleString('en-IN');
+
+
+  document.querySelector('#minutes').textContent =
+    Math.floor(s / 60)
+      .toLocaleString('en-IN');
+
+
+  document.querySelector('#seconds').textContent =
+    (s % 60)
+      .toString()
+      .padStart(2,'0');
+
 }
-</script></script></body></html>
+
+
+updateCounter();
+
+setInterval(updateCounter,1000);
+
+
+/* =========================
+   FLOATING HEARTS
+   ========================= */
+
+function makeHeart(){
+
+  const h =
+    document.createElement('div');
+
+
+  h.className = 'heart';
+
+
+  h.textContent =
+    ['♥','♡','✦','·']
+      [Math.floor(Math.random()*4)];
+
+
+  h.style.left =
+    Math.random()*100 + '%';
+
+
+  h.style.setProperty(
+    '--drift',
+    (Math.random()*160 - 80) + 'px'
+  );
+
+
+  h.style.animationDuration =
+    (7 + Math.random()*9) + 's';
+
+
+  h.style.fontSize =
+    (9 + Math.random()*19) + 'px';
+
+
+  document
+    .querySelector('#hearts')
+    .appendChild(h);
+
+
+  setTimeout(
+    () => h.remove(),
+    17000
+  );
+
+}
+
+
+setInterval(makeHeart,950);
+
+
+/* =========================
+   LOADER
+   ========================= */
+
+window.addEventListener(
+  'load',
+  () => {
+
+    setTimeout(
+      () => {
+
+        document
+          .querySelector('#loader')
+          .style.opacity = '0';
+
+
+        document
+          .querySelector('#loader')
+          .style.visibility = 'hidden';
+
+      },
+      650
+    );
+
+  }
+);
+
+
+/* =========================
+   NAVIGATION ACTIVE STATE
+   ========================= */
+
+const links =
+  [...document.querySelectorAll('nav a')];
+
+
+const sections =
+  [...document.querySelectorAll('main section[id]')];
+
+
+window.addEventListener(
+  'scroll',
+  () => {
+
+    let y =
+      scrollY + 180;
+
+
+    let current =
+      sections.find(
+        s =>
+          y >= s.offsetTop &&
+          y < s.offsetTop + s.offsetHeight
+      );
+
+
+    links.forEach(
+      a =>
+        a.classList.toggle(
+          'active',
+          current &&
+          a.getAttribute('href') === '#' + current.id
+        )
+    );
+
+  }
+);
+
+
+/* =========================
+   SURPRISE
+   ========================= */
+
+function openSecret(){
+
+  const box =
+    document.querySelector('#secret');
+
+
+  box.classList.toggle('open');
+
+
+  if(box.classList.contains('open')){
+
+    for(let i=0;i<34;i++){
+
+      setTimeout(
+        () => {
+
+          makeHeart();
+
+          burst();
+
+        },
+        i*45
+      );
+
+    }
+
+  }
+
+}
+
+
+function burst(){
+
+  const b =
+    document.createElement('i');
+
+
+  b.className =
+    'firework';
+
+
+  b.style.left =
+    (45 + Math.random()*10) + '%';
+
+
+  b.style.top =
+    (42 + Math.random()*10) + '%';
+
+
+  b.style.setProperty(
+    '--x',
+    (Math.random()*300 - 150) + 'px'
+  );
+
+
+  b.style.setProperty(
+    '--y',
+    (Math.random()*260 - 130) + 'px'
+  );
+
+
+  document
+    .querySelector('.surprise')
+    .appendChild(b);
+
+
+  setTimeout(
+    () => b.remove(),
+    1100
+  );
+
+}
+
+
+/* =========================
+   PHOTO UPLOAD
+   ========================= */
+
+const input =
+  document.querySelector('#photoInput');
+
+
+input.addEventListener(
+  'change',
+  e => {
+
+    const files =
+      [...e.target.files]
+        .slice(0,12);
+
+
+    if(!files.length)
+      return;
+
+
+    const grid =
+      document.querySelector('#memoryGrid');
+
+
+    grid.innerHTML = '';
+
+
+    files.forEach(
+      (file,i) => {
+
+        const card =
+          document.createElement('div');
+
+
+        card.className =
+          'memory' +
+          (i === 0 ? ' big' : '');
+
+
+        const img =
+          document.createElement('img');
+
+
+        img.src =
+          URL.createObjectURL(file);
+
+
+        img.alt =
+          'Memory ' + (i + 1);
+
+
+        card.appendChild(img);
+
+
+        const label =
+          document.createElement('div');
+
+
+        label.className =
+          'memory-label';
+
+
+        label.textContent =
+          [
+            'Our favourite',
+            'A little moment',
+            'Us',
+            'That day',
+            'Another memory',
+            'Always',
+            'Still smiling',
+            'My person',
+            'Forever',
+            'One for the books',
+            'Us again',
+            '♡'
+          ][i] || 'Memory';
+
+
+        card.appendChild(label);
+
+
+        grid.appendChild(card);
+
+      }
+    );
+
+  }
+);
+
+
+/* =========================
+   MUSIC CONTROLLER
+   ========================= */
+
+const bgAudio =
+  document.getElementById('bgMusic');
+
+
+const musicToggleBtn =
+  document.getElementById('musicToggleBtn');
+
+
+const musicIcon =
+  document.getElementById('musicIcon');
+
+
+const musicText =
+  document.getElementById('musicText');
+
+
+function toggleSiteMusic(){
+
+  if(bgAudio.paused){
+
+    bgAudio.play()
+      .then(() => {
+
+        musicToggleBtn
+          .classList
+          .add('playing');
+
+
+        musicIcon.textContent =
+          '⏸';
+
+
+        musicText.textContent =
+          'Pause Music';
+
+      })
+
+      .catch(error => {
+
+        console.error(
+          'Music playback error:',
+          error
+        );
+
+
+        alert(
+          'Music could not be played. Please make sure "music/songg.mp3" exists and is a valid MP3 file.'
+        );
+
+      });
+
+  }
+
+  else{
+
+    bgAudio.pause();
+
+
+    musicToggleBtn
+      .classList
+      .remove('playing');
+
+
+    musicIcon.textContent =
+      '♫';
+
+
+    musicText.textContent =
+      'Play Music';
+
+  }
+
+}
+
+
+/* =========================
+   HERO MUSIC BUTTON
+   ========================= */
+
+function toggleMusic(){
+
+  toggleSiteMusic();
+
+}
+
+
+</script>
+
+</body>
+</html>
